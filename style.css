@@ -1,0 +1,216 @@
+/* css reset */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#logo{
+margin: 10px 35px;
+}
+#logo img{
+margin: 3px 6px;
+height: 62px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(252, 166, 8);
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+     opacity: 0.4
+}
+#navbar ul li{
+   
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: #42007e;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 100px;
+    height: 496px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+  background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    top: 0px;
+    left: 0px;
+     opacity: 0.8
+}
+#home h1{
+    font-family: 'Baloo 2', cursive;
+    color: rgb(7 50 172);
+    text-align: center;
+}
+#home p{
+    font-family: 'Baloo 2', cursive;
+    color: rgb(7 50 172);
+    text-align: center;
+    font-size: 0.9rem;
+}
+/* services */
+#services{
+    margin: 34px;
+    display:flex;
+    background: skyblue ;
+   
+
+}
+#service .box{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+   
+
+}
+/* .services-container::before{
+    content: "";
+    background: url('services.webp');
+    position: absolute;
+    width: 100%;
+    height: 71.5%;
+    z-index: -1;
+    opacity: 0.4;
+    } */
+
+/* .services-container{
+    text-align: center
+} */
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 2px 10px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+   
+    
+}
+
+#services .box img{
+    border: 2px solid brown;
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+#client-section{
+height: 320px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+background:url('bg2.jpg') ;
+width: 100%;
+height: 55%;
+z-index: -1;
+opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+   height: 90px;
+}
+.client-item{
+    padding: 34px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('contact.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   padding-bottom: 34px ;
+}
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 10px;
+   font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Itim', cursive;
+    color: darkblue;
+}
+footer{
+    background-color: black;
+    color: darkorange;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Itim', cursive;
+    padding: -3px
+}
+.h-secondary{
+    font-size: 1.6rem;
+    font-family: 'Itim', cursive;
+    padding: 10px
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid wheat;
+    background-color: rgb(1, 201, 151);
+    color: rgb(209, 35, 5);
+    margin: 17px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}

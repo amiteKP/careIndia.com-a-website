@@ -1,0 +1,52 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 0.9rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* home */
+#home{
+    height: 370px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 480px;
+
+}
+#home p{
+    font-size: 12px;
+}
+/* services */
+#services{
+    flex-direction: column;
+    
+
+}
+/* .services-container::before{
+    content: "";
+    background: url('services.webp');
+    position: absolute;
+    width: 50%;
+    height: 71.5%;
+    z-index: -1;
+    opacity: 0.4;
+    } */
+
+/* clients */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 60px;
+    padding: 4px;
+    height: auto;
+}
+/* contact */
+/* utility class */
+.h-primary{
+   font-size: 1.8rem;
+   padding: 3px 6px;
+}
